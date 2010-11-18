@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 # This needs to be run as root. Tested on Ubuntu 10.04 but should
-# also work 10.10
+# also work with 10.10
 # Prerequisite: git-core is already installed
 
 # Make sure I get all updates
@@ -9,6 +9,9 @@ apt-get upgrade -y
 
 # Install the package I like
 apt-get install -y openssh-server vim ack-grep curl htop gcc 
+
+# This is useful for discovering the new vm on the network
+apt-get install -y avahi-daemon
 
 # A bunch of stuff uses these so install them too
 apt-get install -y zlib1g-dev libssl-dev
@@ -21,3 +24,5 @@ apt-get install -y $headers
 # Setup ack-grep command the way I like it
 mkdir -p /usr/local/bin
 ln -s /usr/bin/ack-grep /usr/local/bin/ack
+
+echo "Modify /etc/hostname and /etc/hosts to name this VM"

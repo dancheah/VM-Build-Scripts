@@ -13,6 +13,9 @@ apt-get install -y openssh-server vim ack-grep curl htop gcc
 # This is useful for discovering the new vm on the network
 apt-get install -y avahi-daemon
 
+# Good to have
+apt-get install -y tmux
+
 # A bunch of stuff uses these so install them too
 apt-get install -y zlib1g-dev libssl-dev
 

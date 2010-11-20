@@ -8,7 +8,7 @@ apt-get update -y
 apt-get upgrade -y
 
 # Install the package I like
-apt-get install -y openssh-server vim ack-grep curl htop gcc 
+apt-get install -y git-core openssh-server vim ack-grep curl htop gcc 
 
 # This is useful for discovering the new vm on the network
 apt-get install -y avahi-daemon
@@ -18,6 +18,10 @@ apt-get install -y tmux
 
 # A bunch of stuff uses these so install them too
 apt-get install -y zlib1g-dev libssl-dev
+
+# Standard perl dependencies to help replace shell
+# scripts
+apt-get install -y libtemplate-perl perl-doc
 
 # Figure out what kernel headers need to be installed. Need
 # this for VMWare Tools.

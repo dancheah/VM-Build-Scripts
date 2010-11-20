@@ -17,7 +17,7 @@ apt-get install -y avahi-daemon
 apt-get install -y tmux
 
 # A bunch of stuff uses these so install them too
-apt-get install -y zlib1g-dev libssl-dev
+apt-get install -y zlib1g-dev libssl-dev libreadline6-dev
 
 # Standard perl dependencies to help replace shell
 # scripts

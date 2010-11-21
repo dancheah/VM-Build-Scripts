@@ -16,8 +16,8 @@ apt-get install -y avahi-daemon
 # Good to have
 apt-get install -y tmux sqlite3
 
-# A bunch of stuff uses these so install them too
-apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev
+# A bunch of dev stuff uses these so install them too
+apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev libxslt-dev libxml2-dev
 
 # Standard perl dependencies to help replace shell
 # scripts

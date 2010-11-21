@@ -14,10 +14,10 @@ apt-get install -y git-core openssh-server vim ack-grep curl htop gcc
 apt-get install -y avahi-daemon
 
 # Good to have
-apt-get install -y tmux
+apt-get install -y tmux sqlite3
 
 # A bunch of stuff uses these so install them too
-apt-get install -y zlib1g-dev libssl-dev libreadline6-dev
+apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev
 
 # Standard perl dependencies to help replace shell
 # scripts

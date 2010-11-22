@@ -8,13 +8,13 @@ apt-get update -y
 apt-get upgrade -y
 
 # Install various command line utilities
-apt-get install -y git-core openssh-server vim ack-grep curl htop gcc tree tmux sqlite3
+apt-get install -y git-core openssh-server vim ack-grep curl htop gcc tree tmux sqlite3 flex bison
 
 # This is useful for discovering the new vm on the network
 apt-get install -y avahi-daemon
 
 # A bunch of dev stuff uses these so install them too
-apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev libxslt-dev libxml2-dev
+apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev libxslt-dev libxml2-dev tcl-dev tk-dev
 
 # Standard perl dependencies to help replace shell
 # scripts

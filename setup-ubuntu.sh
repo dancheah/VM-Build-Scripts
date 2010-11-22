@@ -7,14 +7,11 @@
 apt-get update -y
 apt-get upgrade -y
 
-# Install the package I like
-apt-get install -y git-core openssh-server vim ack-grep curl htop gcc 
+# Install various command line utilities
+apt-get install -y git-core openssh-server vim ack-grep curl htop gcc tree tmux sqlite3
 
 # This is useful for discovering the new vm on the network
 apt-get install -y avahi-daemon
-
-# Good to have
-apt-get install -y tmux sqlite3
 
 # A bunch of dev stuff uses these so install them too
 apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libsqlite3-dev libxslt-dev libxml2-dev
